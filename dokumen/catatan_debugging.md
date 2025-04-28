@@ -1,0 +1,6 @@
+- **Undefined class/method**: Pastikan `use` statements ada, jalankan `composer dump-autoload -o`, dan cek `psr-4` autoload.
+- **Composer not found**: Install Composer via Composer-Setup.exe, tambahkan ke PATH, restart terminal.
+- **Migration error (table exists)**: Jalankan `php artisan migrate:rollback --step=1` lalu `php artisan migrate` ulang.
+- **Seeder error (class not found)**: Pastikan namespace di `seeder` benar (`Database\Seeders`) dan file terdaftar di `DatabaseSeeder.php`.
+- **Vite build fail**: Cek `package.json` scripts, jalankan `npm install` ulang kemudian `npm run dev`.
+- **Intelephense ngambek**: Pasang extension *Laravel Extra Intellisense* dan `barryvdh/laravel-ide-helper`, clear cache & reload VS Code.
